@@ -1,0 +1,88 @@
+{
+  "description": "Sample test data generated for an Enterprise Employee & Department dataset",
+  "entities": {
+    "departments": [
+      {
+        "id": "DEP-01",
+        "name": "Engineering",
+        "budget": 1250000,
+        "location": "Building A, Floor 4",
+        "is_active": true
+      },
+      {
+        "id": "DEP-02",
+        "name": "Product & Design",
+        "budget": 850000,
+        "location": "Building A, Floor 3",
+        "is_active": true
+      },
+      {
+        "id": "DEP-03",
+        "name": "Quantitative Finance",
+        "budget": 2100000,
+        "location": "Building B, Floor 10",
+        "is_active": true
+      },
+      {
+        "id": "DEP-04",
+        "name": "Legal & Compliance",
+        "budget": 650000,
+        "location": "Building B, Floor 2",
+        "is_active": true
+      }
+    ],
+    "employees": [
+      {
+        "id": "EMP-1001",
+        "full_name": "Elena Rostova",
+        "email": "elena.rostova@synthetic-enterprise.com",
+        "department_id": "DEP-01",
+        "role": "Principal Distributed Systems Engineer",
+        "salary": 185000,
+        "joined_date": "2021-03-15",
+        "is_active": true
+      },
+      {
+        "id": "EMP-1002",
+        "full_name": "Marcus Vance",
+        "email": "marcus.vance@synthetic-enterprise.com",
+        "department_id": "DEP-03",
+        "role": "Senior Quantitative Researcher",
+        "salary": 220000,
+        "joined_date": "2022-07-01",
+        "is_active": true
+      },
+      {
+        "id": "EMP-1003",
+        "full_name": "Amina Al-Mansoor",
+        "email": "amina.mansoor@synthetic-enterprise.com",
+        "department_id": "DEP-02",
+        "role": "Head of Product Experience",
+        "salary": 170000,
+        "joined_date": "2020-11-12",
+        "is_active": true
+      },
+      {
+        "id": "EMP-1004",
+        "full_name": "Julian Chen",
+        "email": "julian.chen@synthetic-enterprise.com",
+        "department_id": "DEP-04",
+        "role": "Regulatory Counsel",
+        "salary": 160000,
+        "joined_date": "2023-01-09",
+        "is_active": true
+      },
+      {
+        "id": "EMP-1005",
+        "full_name": "Sophia Becker",
+        "email": "sophia.becker@synthetic-enterprise.com",
+        "department_id": "DEP-01",
+        "role": "Site Reliability Engineer",
+        "salary": 145000,
+        "joined_date": "2024-02-18",
+        "is_active": false
+      }
+    ]
+  }
+}
+

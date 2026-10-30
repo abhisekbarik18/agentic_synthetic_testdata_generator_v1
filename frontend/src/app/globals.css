@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: #090d16;
+  --foreground: #f8fafc;
+  --scrollbar-track: #0f172a;
+  --scrollbar-thumb: #334155;
+  --scrollbar-thumb-hover: #475569;
+  --color-slate-50: 248 250 252;
+  --color-slate-100: 241 245 249;
+  --color-slate-200: 226 232 240;
+  --color-slate-300: 203 213 225;
+  --color-slate-400: 148 163 184;
+  --color-slate-500: 100 116 139;
+  --color-slate-600: 71 85 105;
+  --color-slate-700: 51 65 85;
+  --color-slate-800: 30 41 59;
+  --color-slate-850: 23 32 48;
+  --color-slate-900: 15 23 42;
+  --color-slate-950: 9 13 22;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+  --scrollbar-track: #e2e8f0;
+  --scrollbar-thumb: #94a3b8;
+  --scrollbar-thumb-hover: #64748b;
+  --color-slate-50: 15 23 42;
+  --color-slate-100: 30 41 59;
+  --color-slate-200: 51 65 85;
+  --color-slate-300: 71 85 105;
+  --color-slate-400: 100 116 139;
+  --color-slate-500: 100 116 139;
+  --color-slate-600: 71 85 105;
+  --color-slate-700: 51 65 85;
+  --color-slate-800: 214 222 234;
+  --color-slate-850: 230 235 243;
+  --color-slate-900: 255 255 255;
+  --color-slate-950: 241 245 249;
+}
+
+html[data-theme="light"] .text-indigo-200:not(:hover),
+html[data-theme="light"] .text-indigo-300:not(:hover),
+html[data-theme="light"] .text-indigo-400:not(:hover) {
+  color: #4338ca;
+}
+
+html[data-theme="light"] .bg-indigo-950 {
+  background-color: #eef2ff;
+}
+
+html[data-theme="light"] .bg-indigo-950\/30,
+html[data-theme="light"] .bg-indigo-900\/50,
+html[data-theme="light"] .bg-indigo-600\/30:not(:hover) {
+  background-color: #eef2ff;
+}
+
+html[data-theme="light"] .border-indigo-800\/60 {
+  border-color: #c7d2fe;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
